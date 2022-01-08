@@ -1,0 +1,58 @@
+h1 {
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h3 {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+p {
+    color: darkslategray;
+}
+
+a {
+    color: blue;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Medium Screens */
+@media (min-width: 481px) and (max-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width:769px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+  }

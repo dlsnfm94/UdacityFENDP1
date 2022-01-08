@@ -1,0 +1,169 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-sharing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.post-sharing p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.post-sharing img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.post-content p {
+    font-size: 24px;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+
+.author-avatar {
+    position: relative;
+    align-self: center;
+}
+
+.author-avatar figcaption {
+    width: 100%;
+    height: fit-content;
+    background-color: #a0a;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    
+}
+
+.author img {
+    width: 100px;
+    height: 100px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    line-height: 0;
+}
+
+.author-info p {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recommended-posts {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommended-post {
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+
+}
+
+.recommended-post figcaption {
+    width: 100%;
+    height: fit-content;
+    background-color: #a0a;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.recommended-post figcaption a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+blockquote {
+    background-color: gray;
+    width: fit-content;
+    font-style: italic;
+}
+
+footer button {
+    background-color: purple;
+    color: #fff;
+    align-content: center;
+    width: fit-content;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Medium Screens */
+@media (min-width: 481px) and (max-width:768px) {
+    .author {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .recommended-posts {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width:769px) {
+    .author {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .recommended-posts {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+}
